@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="images/Logo.png">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script src="https://kit.fontawesome.com/21e78bd597.js" crossorigin="anonymous"></script>
@@ -13,32 +14,64 @@
 <body style="background-color: black">
 
     <nav class="container-fluid navbar fixed-top d-flex">
-        <img id="navImg" src="./images/Logo.webp" alt="Vegas Legion Logo">       
+        <img id="navImg" src="./images/Logo.png" alt="Vegas Legion Logo">       
         <ul class="navLinks d-inline-flex ms-auto">
-            <li><a class="navLink mx-3 text-decoration-none" href="#">ABOUT</a></li>
-            <li><a class="navLink mx-3 text-decoration-none" href="#schedule">SCHEDULE</a></li>
-            <li><a class="navLink mx-3 text-decoration-none" href="#roster">ROSTER</a></li>
-            <li><a class="navLink mx-3 text-decoration-none" href="#partners">PARTNERS</a></li>
-            <li><a class="navLink mx-3 text-decoration-none" href="#news">NEWS</a></li>
-            <li><a class="navLink mx-3 text-decoration-none" href="#store">STORE</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#">ABOUT</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#schedule">SCHEDULE</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#roster">ROSTER</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#partners">PARTNERS</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#news">NEWS</a></li>
+            <li><a class="navLink mx-4 text-decoration-none" href="#store">STORE</a></li>
             <a id="joinButton">JOIN THE LEGION <i class="fa-solid fa-arrow-right"></i></a>
         </ul>
     </nav>
     
     <div class="hero">
-        <img id="heroImg" src="./images/LegionOnStageHero.jpg" alt="Vegas Legion On Stage"> 
+        <img id="heroImg" src="./images/vegas-legion-logo.webp" alt="Vegas Legion On Stage"> 
     </div>
 
-    <div class="heroText text-center">
-        <h5 class="heroH5"><img class="heroLogo" src="./images/Logo.webp">WELCOME TO VEGAS<img class="heroLogo" src="./images/Logo.webp"></h5>
-        <h1 class="heroH1">HOME OF THE </h1>
-        <span class="gradientH1">LEGION</span>
-    </div>
-
-    <div class="majorCard container">
-        <img id="schedule" id="majorCard" src="./images/MajorCard.png" alt="Major Card">
+    <div id="schedule" class="majorCard container" style="height: 100vh;">
+            <img class="majorImg" class="align-middle" id="majorCard" src="./images/MajorCard.png" alt="Major Card">
         <button class="btn">Get Tickets Now!</button>
     </div>
 
+    <div id="roster" class="roster">
+        <h1 class="text-white text-center mb-5 mt-5">ROSTER</h1>
+        <div class="container w-100 text-left">
+            <div class="d-flex flex-row">
+
+                <div class="playerCard col-sm-12 col-md-3">
+                    <img class="playerImageSize" src="./images/Clayster_CDL_2020.webp" alt="Player Named Clayster">
+                    <h5>James Eubanks</h5>
+                    <h3>CLAYSTER</h3>
+                    <p>MAIN AR</p>
+                    <button class="noBackground"><i class="icon fa-brands fa-twitch text-"></i></button><button class="noBackground"><i class="icon fa-brands fa-twitter text- mx-3 mb-4"></i></button><button class="noBackground"><i class="icons fa-brands fa-youtube text-"></i></button>                </div>
+
+                <div class="playerCard col-sm-12 col-md-3 mx-3">
+                    <img class="playerImageSize" src="./images/TJHaLy_2023.webp" alt="Player Named TJHaLy">
+                    <h5>Thomas Haly</h5>
+                    <h3>TJHALY</h3>
+                    <p>SMG</p>
+                    <button class="noBackground"><i class="icon fa-brands fa-twitch text-"></i></button><button class="noBackground"><i class="icon fa-brands fa-twitter text- mx-3 mb-4"></i></button><button class="noBackground"><i class="icons fa-brands fa-youtube text-"></i></button>                </div>
+
+                <div class="playerCard col-sm-12 col-md-3">
+                    <img class="playerImageSize" src="./images/Temp_2023.webp" alt="Player Named Temp">
+                    <h5>Donovan Laroda</h5>
+                    <h3>TEMP</h3>
+                    <p>FLEX</p>
+                    <button class="noBackground"><i class="icon fa-brands fa-twitch text-"></i></button><button class="noBackground"><i class="icon fa-brands fa-twitter text- mx-3 mb-4"></i></button><button class="noBackground"><i class="icons fa-brands fa-youtube text-"></i></button>                </div>
+
+                <div class="playerCard col-sm-12 col-md-3 mx-3">
+                    <img class="playerImageSize" src="./images/2real_2023.webp" alt="Player Named 2ReaL">
+                    <h5>Brendan Stockdale</h5>
+                    <h3>2REAL</h3>
+                    <p>FLEX</p>
+                    <button class="noBackground"><i class="icon fa-brands fa-twitch text-"></i></button class="noBackground"><button class="noBackground"><i class="icon fa-brands fa-twitter text- mx-3 mb-4"></i></button><button class="noBackground"><i class="icons text-left fa-brands fa-youtube text-"></i></button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>

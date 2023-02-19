@@ -4,15 +4,15 @@ body {
 }
 
 nav {
-    height: 80px;
+    height: 90px;
     background: linear-gradient(0deg,#000,#0f0f0f);
     border-bottom: 2px #ed7623 solid;
     opacity: 90%;
 }
 
 #navImg {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     margin-left: 140px;
     margin-bottom: 5px;
 }
@@ -26,7 +26,7 @@ nav {
     cursor: pointer;
     color: white;
     text-decoration: none;
-    font-size: small;
+    font-size: medium;
     font-weight: 700;
     padding: 10px 24px;
     margin-right: 140px;
@@ -43,10 +43,10 @@ nav {
 }
 
 .navLink {
-    font-size: small;
+    font-size: medium;
     font-weight: 700;
     color: white;
-    line-height: 39.5px;
+    line-height: 45px;
     
 }
 
@@ -61,14 +61,15 @@ nav {
     -moz-text-fill-color: transparent;
 }
 
-#heroImg {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero {
     height: 100vh;
+}
+
+#heroImg {
     width: 100%;
+    height: 100vh;
     z-index: -10;
-    filter: brightness(30%);
+    filter: brightness(75%);
 }
 
 .heroText {
@@ -76,18 +77,18 @@ nav {
     color: white;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 40%;
     transform: translate(-50%,-50%);
 }
 
 .heroH5 {
-    font-size: 12pt;
+    font-size: 14pt;
     font-weight: 200;
     margin-bottom: 25px;
 }
 
 .heroH1 {
-    font-size: 50pt;
+    font-size: 55pt;
     font-weight: 200;
     margin-bottom: -20px;
 }
@@ -110,24 +111,15 @@ nav {
     -moz-text-fill-color: transparent;
 }
 
-#vegasStar  {
-    border: 2px white solid;
-}
-
-.majorCard {
-    margin-top: 100px;
-    top: 100vh;
-    height: 100vh;
-}
-
 .container {
+    display: grid;
+    place-items: center;
     position: relative;
     width: 100%;
     max-width: 250px;
 }
 
-.container img {
-    width: 100%;
+.majorImg {
     border: 2px solid #ed7623;
 }
 
@@ -135,8 +127,8 @@ nav {
     font-size: xx-large;
     font-weight: 700;
     position: absolute;
-    top: 45%;
-    left: 72%;
+    top: 65%;
+    left: 68%;
     transform: translate(-50%, -50%);
     background: linear-gradient(to right top, #ed7623, #9c192e); 
     border: none;
@@ -150,6 +142,86 @@ nav {
     color: white;
     transition: .35s;
     box-shadow: 0px 2px 23px #9c192e;
+}
+
+.roster {
+    padding-top:5vh;
+    height: 95vh;
+    width: 100%;
+}
+
+.roster h1 {
+    font-family: sans-serif;
+}
+
+.playerCard {
+    font-family: sans-serif;
+    background-image: radial-gradient(var(--tw-gradient-stops));
+        border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(23 23 23 / var(--tw-border-opacity));
+    --tw-gradient-from: #171717;
+    --tw-gradient-to: rgb(23 23 23 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    border: 2px solid #ed7623;
+    border-radius: 27px;
+}
+
+.playerCard:hover {
+
+}
+
+.playerImageSize {
+    margin-top: 25px;
+    width: fit-content;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.playerCard p {
+    margin-left: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+
+.playerCard h5 {
+    margin-left: 20px;
+    color: #ed7623;
+}
+
+.playerCard h3 {
+    margin-left: 20px;
+    color: white;
+}
+
+.icon {
+    margin-left: 20px;
+    color: white;
+}
+
+.icons {
+    color: white;
+}
+
+.icons:hover {
+    transition: .2s;
+    color: #ed7623;
+}
+
+.icon:hover {
+    transition: .2s;
+    color: #ed7623;
+}
+
+.noBackground {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1300px) {
+
 }
 
 @media screen and (max-width: 1200px) {
